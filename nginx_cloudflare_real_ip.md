@@ -1,4 +1,4 @@
-p: cloudflares IPs might change invalidating the `set_real_ip_from` stuff in nginx configs
+p: cloudflares IPs might change invalidating the `set_real_ip_from` stuff in nginx configs<br>
 s: auto-update `set_real_ip_from` config to match cloudflares current IP range
 
 to do that, one must generate the `set_real_ip_from` directives for all the IPs currently used by CloudFlare
