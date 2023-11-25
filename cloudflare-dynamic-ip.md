@@ -6,7 +6,7 @@ s: just do it
 
 ### noise
 
-this specificly extracts the `temporary` IPv6 from `ip addr show` in a horrible way.<br>
+this specifically extracts the `temporary` IPv6 from `ip addr show` in a horrible way.<br>
 horrible because if there are multiple temporary ips assigned (possibly on different interfaces) things get messy.<br>
 also depending on configuration the public IPv6 address might not be `temporary` rendering the regular expression used below useless.
 
