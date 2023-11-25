@@ -1,17 +1,19 @@
 # DO NOT USE (SHIT)
 ### migraine warning
 
+---
+
 p: automaticly updating DNS entries on CloudFlare to dynamic IP address<br>
 s: just do it
 
 ### noise
 
 this specifically extracts the `temporary` IPv6 from `ip addr show` in a horrible way.<br>
-horrible because if there are multiple temporary ips assigned (possibly on different interfaces) things get messy.<br>
+horrible because if there are multiple temporary IPs assigned (possibly on different interfaces) things get messy.<br>
 also depending on configuration the public IPv6 address might not be `temporary` rendering the regular expression used below useless.
 
 one could use an api like `https://ip6only.me/api/`<br>
-or do proper sanitaion of the output of `ip addr show`<br>
+or do proper sanitation of the output of `ip addr show`<br>
 but why bother, just fix it when it becomes a problem on friday at 19:00 
 
 ### files and code
@@ -32,7 +34,7 @@ fi
 ```
 
 `update_cloudflare_dns_entry.sh`:
-```
+``` bash
 echo "$1"
 curl --request PUT \
   --url https://api.cloudflare.com/client/v4/zones/ZONE_URL \
@@ -51,7 +53,7 @@ curl --request PUT \
 
 ### persist shit
 
-to be effective this shit needs to be run all the time to detect ip changes and update dns accordingly.
+to be effective this shit needs to be run all the time to detect IP changes and update DNS accordingly.
 
 `crontab -e`
 
