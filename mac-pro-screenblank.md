@@ -1,4 +1,5 @@
 p: when using mac pro from stoneage as server, backlight (and lcd) stays on wasting power.
+
 s: turn backlight off
 
 > https://superuser.com/a/1454468
