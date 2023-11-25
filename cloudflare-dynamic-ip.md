@@ -1,7 +1,7 @@
 # DO NOT USE (SHIT)
 ### migraine warning
 
-p: automaticly updating DNS entries on CloudFlare to dynamic IP address
+p: automaticly updating DNS entries on CloudFlare to dynamic IP address<br>
 s: just do it
 
 ### noise
